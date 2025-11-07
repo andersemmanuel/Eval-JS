@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionnaire de Tâches - BTS SIO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        
+        <header>
+
+            <h1>📋 Gestionnaire de Tâches</h1>
+            <p>Ajoutez, gérez et suivez vos tâches quotidiennes</p>
+
+        </header>
+
+        
+        <section class="form-section">
+            <h2>Nouvelle Tâche</h2>
+
+            <form id="taskForm">
+        
+            <div class="form-group">
+
+                    <label for="titre">Titre *</label>
+
+                    <input type="text" id="titre" name="titre" placeholder="Ex: Faire les courses"required>
+
+            </div>
+  
+            <div class="form-group">
+
+                    <label for="sousTitre">Sous-titre</label>
+
+                    <input type="text" id="sousTitre" name="sousTitre" placeholder="Ex: Supermarché du centre" required>
+
+            </div>
+
+            <div class="form-group">
+
+                    <label for="message">Message</label>
+
+                    <textarea id="message" name="message" rows="4" placeholder="Détails de la tâche..."></textarea>
+
+            </div>
+
+            <div class="form-group">
+
+                    <label for="email">Email</label>
+
+                    <input type="email" id="email" name="email" placeholder="exemple@email.com" required>
+
+            </div>
+
+                
+            <div class="form-group">
+
+                    <label for="date">Date</label>
+
+                    <input type="date" id="date" name="date">
+
+            </div>
+
+                
+            <button type="submit" class="btn-add">
+
+                    ➕ Ajouter
+
+            </button>
+
+            </form>
+            
+        </section>
+
+        
+        <section class="tasks-section">
+
+            <h2>Mes Tâches</h2>
+            <div id="taskList"></div>
+
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
