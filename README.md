@@ -1,4 +1,4 @@
-# 📋 Gestionnaire de Tâches - BTS SIO
+# 📋 Gestionnaire de Tâches
 
 Application web simple pour gérer vos tâches quotidiennes. Création, affichage, validation et suppression de tâches avec une interface moderne en dark mode.
 
